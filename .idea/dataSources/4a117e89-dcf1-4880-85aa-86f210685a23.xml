@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="infs">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="archon"/>
+    <schema id="4" parent="1" name="artbuild"/>
+    <schema id="5" parent="1" name="atlantis"/>
+    <schema id="6" parent="1" name="atlantis_restore"/>
+    <schema id="7" parent="1" name="autopujcovna"/>
+    <schema id="8" parent="1" name="azet"/>
+    <schema id="9" parent="1" name="azet2"/>
+    <schema id="10" parent="1" name="betonplast"/>
+    <schema id="11" parent="1" name="bkcgame"/>
+    <schema id="12" parent="1" name="chmelic_home"/>
+    <schema id="13" parent="1" name="chmelic_sginfo"/>
+    <schema id="14" parent="1" name="chmelic_sgpedie"/>
+    <schema id="15" parent="1" name="chmelic_trida"/>
+    <schema id="16" parent="1" name="cvut"/>
+    <schema id="17" parent="1" name="data1"/>
+    <schema id="18" parent="1" name="depilace"/>
+    <schema id="19" parent="1" name="dovy"/>
+    <schema id="20" parent="1" name="dup"/>
+    <schema id="21" parent="1" name="earthgame"/>
+    <schema id="22" parent="1" name="ecerat"/>
+    <schema id="23" parent="1" name="eshopdemo"/>
+    <schema id="24" parent="1" name="evadesign"/>
+    <schema id="25" parent="1" name="feckoff"/>
+    <schema id="26" parent="1" name="franta"/>
+    <schema id="27" parent="1" name="horde"/>
+    <schema id="28" parent="1" name="information_schema"/>
+    <schema id="29" parent="1" name="jidelna"/>
+    <schema id="30" parent="1" name="mmmdotaznik"/>
+    <schema id="31" parent="1" name="money"/>
+    <schema id="32" parent="1" name="moudrydaw"/>
+    <schema id="33" parent="1" name="moudryfolie"/>
+    <schema id="34" parent="1" name="mydb"/>
+    <schema id="35" parent="1" name="mysql"/>
+    <schema id="36" parent="1" name="nisaform"/>
+    <schema id="37" parent="1" name="onlineliga"/>
+    <schema id="38" parent="1" name="opensg"/>
+    <schema id="39" parent="1" name="pentajn"/>
+    <schema id="40" parent="1" name="performance_schema"/>
+    <schema id="41" parent="1" name="phpmyadmin"/>
+    <schema id="42" parent="1" name="prasatko"/>
+    <schema id="43" parent="1" name="quickstart"/>
+    <schema id="44" parent="1" name="rshajek"/>
+    <schema id="45" parent="1" name="rsranko"/>
+    <schema id="46" parent="1" name="rsreklama"/>
+    <schema id="47" parent="1" name="seikos"/>
+    <schema id="48" parent="1" name="sgakronika"/>
+    <schema id="49" parent="1" name="sgaters"/>
+    <schema id="50" parent="1" name="sggame"/>
+    <schema id="51" parent="1" name="sggame_restore"/>
+    <schema id="52" parent="1" name="sgokronika"/>
+    <schema id="53" parent="1" name="sgold"/>
+    <schema id="54" parent="1" name="sgotest"/>
+    <schema id="55" parent="1" name="shop3m"/>
+    <schema id="56" parent="1" name="shopazet"/>
+    <schema id="57" parent="1" name="shopcollagen"/>
+    <schema id="58" parent="1" name="shopdemo"/>
+    <schema id="59" parent="1" name="shoperos"/>
+    <schema id="60" parent="1" name="shoplonglife"/>
+    <schema id="61" parent="1" name="shopmedialt"/>
+    <schema id="62" parent="1" name="shopmicky"/>
+    <schema id="63" parent="1" name="shopnahrin"/>
+    <schema id="64" parent="1" name="shopnapoho"/>
+    <schema id="65" parent="1" name="shopsnabb"/>
+    <schema id="66" parent="1" name="students"/>
+    <schema id="67" parent="1" name="test"/>
+    <schema id="68" parent="1" name="theater"/>
+    <table id="69" parent="2" name="posts"/>
+    <column id="70" parent="69" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="71" parent="69" name="author">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="69" name="content">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <key id="73" parent="69" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

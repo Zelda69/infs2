@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+ </head>
+ <body>
+ <div class="content">
+    
+    <div class="row">
+    <div class="site-logo">
+      <h1>Administration</h1>
+    </div>
+</div>
+<div class="menu">
+      <ul>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="?controller=login&action=logout">Logout</a></li>
+      </ul>
+    </div>
+<div class="admin">    
+ <h3>All Users</h3>
+<table>
+<tr>
+	<th>Login</th>
+	<th>Name</th>
+	<th>Surname</th>
+	<th>Email</th>
+	<th>Delete</th>
+	</tr>
+</table>
+
+<h3>Create User</h3>
+
+<form name="admin" action="?controller=admin&action=createUser" method="POST">
+<input type="text" name="username" placeholder="Login">
+<input type="text" name="password" placeholder="Password">
+<input type="text" name="name" placeholder="Name">
+<input type="text" name="surname" placeholder="Surname">
+<input type="text" name="email" placeholder="Email">
+<input type="submit" value="Create">
+</form>
+
+<h3>All Categories:</h3>
+<table>
+<tr>
+	<th>Name</th>
+	<th>Delete</th>
+	</tr>
+</table>
+
+
+
+<h3>Create Category</h3>
+<form name="admin" action="?controller=admin&action=createCategory" method="POST">
+<select name="master">
+<option value="">Select Master Category</option>
+<option value="1">World</option>
+<option value="2">Fashion</option>
+</select>
+<input type="text" name="name" placeholder="Name">
+<input type="submit" value="Create">
+</form>                                        
+	</div>
+ </div>
+ </body>
+ </html>

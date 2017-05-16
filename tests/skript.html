@@ -1,0 +1,28 @@
+<script type="text/javascript">
+function loadFromTextFile()
+{
+var xmlhttp;
+if (window.XMLHttpRequest) // kod pro IE7+, Firefox, Chrome, Opera, Safari
+  {
+  xmlhttp = new XMLHttpRequest();
+  }
+else // kod pro IE6, IE5
+  {
+  xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange = function()
+  {
+  if (this.readyState == 4 && this.status == 200) // this zde referuje na konkretni instanci XMLHTTP pozadavku, na nas xmlhttp
+    {
+    //alert(this.responseText);
+    document.getElementById("text").innerHTML = this.responseText;    
+    }
+  }
+xmlhttp.open("GET","./ajax_info.txt",true);
+xmlhttp.send();
+}
+// zavolani funkce obsahujici AJAX
+loadFromTextFile();
+</script>
+
+<p id="text">Test</p>

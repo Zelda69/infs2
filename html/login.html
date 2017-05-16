@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TestResponsive</title>
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+
+<link rel="stylesheet" href="Swiper/dist/css/swiper.css">
+<link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
+ 
+<script src="Swiper/dist/js/swiper.js"></script>
+<script src="Swiper/dist/js/swiper.min.js"></script>
+<script src="Swiper/dist/js/swiper.jquery.js"></script>
+<script src="Swiper/dist/js/swiper.jquery.min.js"></script>
+
+
+</head>
+<body>
+<div class="content">
+  <div class="row">
+    <div class="site-logo">
+      <h1>Express</h1>
+      <h4>Blogs &amp; magazines</h4>
+    </div>
+  </div>
+  <form class="login"><h3>Log in</h3>
+  <h6>Username:</h6>
+<input>
+<h6>Password:</h6>
+<input>
+<input name="submit" type="submit" value="Login" />
+<a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+</form>
+
+
+ </div>
+<div id="scroll-up-button" onClick="goTop()" class="scroll-up hide"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </div>
+
+<script>
+	
+window.onscroll = function() {showHideScrollUp()};
+
+	
+var timeOut;
+function goTop() {
+  if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+    window.scrollBy(0,-50);
+    timeOut=setTimeout('goTop()',10);
+  }
+  else clearTimeout(timeOut);
+}
+	
+
+	
+function showHideScrollUp() {
+    var buttonek =  document.getElementById("scroll-up-button");
+	
+	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+      buttonek.className = "scroll-up show";
+    } else{
+	  buttonek.className = "scroll-up hide";
+	}
+}
+	</script>
+	
+	<script src="Swiper/dist/js/swiper.min.js"></script>
+	   <script>
+    var swiper1 = new Swiper('.s1', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        speed: 600,
+		
+    });
+    </script>
+    
+     <script>
+    var swiper1 = new Swiper('.s2', {
+ 		
+        paginationClickable: false,
+        direction: 'vertical',
+        speed: 600,
+		
+    });
+    </script>
+</body>
+</html>
